@@ -1,26 +1,39 @@
+/*window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+*/
 $(document).ready(function() {
 
 var navPos, winPos, navHeight;
 
 function refreshVar() {
-  navPos = $('nav').offset().top;
-  navHeight = $('nav').outerHeight(true);
+  navPos = $('#navbar').offset().top;
+  navHeight = $('#navbar').outerHeight(true);
 }
 
 refreshVar();
 $(window).resize(refreshVar);
 
-  $('<div class="clone-nav"></div>').insertBefore('nav').css('height', navHeight).hide();
+  $('<div class="clone-nav"></div>').insertBefore('#navbar').css('height', navHeight).hide();
 
 $(window).scroll(function() {
   winPos = $(window).scrollTop();
 
   if (winPos >= navPos) {
-    $('nav').addClass('fixed shadow');
+    $('#navbar').addClass('fixed shadow');
     $('.clone-nav').show();
   }
   else {
-    $('nav').removeClass('fixed shadow');
+    $('#navbar').removeClass('fixed shadow');
     $('.clone-nav').hide();
   }
 });
