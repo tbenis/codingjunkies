@@ -1,0 +1,133 @@
+#firstdiv {
+  border: 3px solid black;
+  background-color: yellow;
+}
+
+/*body {
+    background-image: url("./images/background.png");
+  }*/
+img#backgroundImage{
+  width:100%;
+  height: 200px;
+}
+
+img#myimage {
+
+/*  position: relative;
+    bottom : 200px;
+    width:100%;
+  height: 300px;*/
+
+}
+
+#footericons {
+text-shadow: 0.95px 0.95px #696969
+/*    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 20%;
+     padding: 20px;*/
+  }
+
+#header {
+  position : fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /*z-index: -1;*/
+}
+
+#navbar {
+/*  text-align: right;*/
+  overflow: hidden;
+  background-color: #7C7CF2;
+  width: 100%;
+  position: relative;
+  right: 0;
+  z-index: 1;
+  bottom: 230px;
+
+}
+#navbarb {
+  background: transparent;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+
+/*    opacity: 0.5;
+    filter: alpha(opacity=50);*/
+}
+
+li {
+  float: right;
+
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #2C2CC7;
+    color: black;
+/*    opacity: 0.5;
+    filter: alpha(opacity=50);*/
+}
+
+.active {
+    display: inline-block;
+  background: #fff;
+    color: black;
+    padding: 2 0 2 0;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./images/parallaxpic.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.img-circle {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffff;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    bottom: 200px;
+}
+
+a.hovering:hover, a.hovering:active {font-size: 300%;}
+
+.footericons {
+  padding: 20px;
+}
+.footer {
+  padding: 0 0 10px 0;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #eaf1ff;
+   color: #fff;
+   font-size: 15px;
+/*  text-shadow: 0.95px 0.95px #696969;*/
+  text-align: center;
+}
