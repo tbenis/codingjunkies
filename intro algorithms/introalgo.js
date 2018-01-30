@@ -24,21 +24,21 @@
 // primeNumber()
 
 
-function duplicatesInArray() {
-  var givenarray = [1,2,2,2,1,5,6,7,8,1] ;
-  for (var i = 0; i < givenarray.length; i++) {
-    var ontest = givenarray[i];
-      for (var j = givenarray.indexOf(ontest) + 1; j < givenarray.length; j++) {
-        if (ontest == givenarray[j + 1]) {
-            givenarray.splice(givenarray[j + 2],1);
-        }
-      }
-      console.log(givenarray);
-  }
-
-}
-
-duplicatesInArray()
+// function duplicatesInArray() {
+//   var givenarray = [1,2,2,2,1,5,6,7,8,1] ;
+//   for (var i = 0; i < givenarray.length; i++) {
+//     var ontest = givenarray[i];
+//       for (var j = givenarray.indexOf(ontest) + 1; j < givenarray.length; j++) {
+//         if (ontest == givenarray[j + 1]) {
+//             givenarray.splice(givenarray[j + 2],1);
+//         }
+//       }
+//       console.log(givenarray);
+//   }
+//
+// }
+//
+// duplicatesInArray()
 
 // function swapword() {
 //   var givenarray = ["dog","mouse","cat","rabbit"] ;
@@ -76,3 +76,37 @@ duplicatesInArray()
 // }
 //
 // doublenum()
+
+// function allIntegers() {
+//   var integers = [];
+//   for (var i = 1; i <255; i++) {
+//     integer.push(i)
+//   }console.log(i);
+//
+// }
+// allIntegers()
+
+// function Oddnum(){
+//   var number = [];
+//   for (var i = 1; i <=255; i++) {
+//     if (i%2 != 0) {
+//       number.push(i)
+//     }
+//     console.log(number);
+// }
+// }
+// Oddnum()
+
+// function numInteger(){
+//   var sumall = 0;
+//   var sum =0;
+//   var integer = [];
+//     for (var i = 0; i <=255; i++) {
+//         sumall = sumall + i;
+//         integer.push(i);
+//     }
+//     console.log(sumall);
+//     console.log(integer);
+// }
+//
+// numInteger()
